@@ -1,0 +1,19 @@
+.banner {
+  background-image: url('https://images.unsplash.com/photo-1485265449635-ca623a55e95c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  height: 70vh;
+  background-position: bottom center;
+  color: #F9F8F8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50vh;
+  position: relative;
+}
+
+.banner h1 {
+  font-size: 80px;
+  position: absolute;
+  left: 466px;
+  bottom: 242px;
+}
