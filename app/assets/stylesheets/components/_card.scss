@@ -1,5 +1,4 @@
 .card {
-  background-image: url(https://source.unsplash.com/featured/?cocktails) ;
   background-size: cover;
   background-position: center;
   border-radius: 5px;
@@ -14,6 +13,7 @@
 }
 
 .card a {
-  color: black;
-  font-weight: bold
+  color: #393E41;
+  font-weight: bold;
+  font-size: 24px ;
 }

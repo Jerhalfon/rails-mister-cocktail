@@ -1,13 +1,24 @@
 <div class="banner">
   <h1> All your cocktails </h1>
 </div>
+
+<% cards_images = ["https://static.750g.com/images/622-auto/b520523117d647dab6b842a36f4cc7f5/mojito-le-vrai.jpg",
+  'https://fac.img.pmdstatic.net/fit/http.3A.2F.2Fprd2-bone-image.2Es3-website-eu-west-1.2Eamazonaws.2Ecom.2Ffac.2F2019.2F01.2F28.2F36ba7092-8fe4-4a93-aa1c-a101dd52804f.2Ejpeg/748x372/quality/80/crop-from/center/sex-on-the-beach.jpeg',
+  'https://cottoecrudo.it/wp-content/uploads/2019/03/Aperol-Spritz-1300x864.png.pagespeed.ce.VRS4PL32o5.png',
+  'https://www.loveandoliveoil.com/wp-content/uploads/2018/07/spritz-cocktail-FEAT1.jpg',
+  'https://i.pinimg.com/474x/da/e8/ff/dae8ff25bde3ca356748132761a4dc27--beer-tasting-bar-ideas.jpg',
+  '../../assets/images/wiskey'] %>
+  <% counter= 0 %>
 <div class="container">
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
-      <div class="card">
+
+      <div class="card" style="background-image: url(<%= cards_images[counter] %>)">
         <%= link_to cocktail.name, cocktail_path(cocktail) %>
+        <% counter += 1 %>
       </div>
     <% end %>
   </div>
   <%= link_to "Create a new cocktail", new_cocktail_path, class: "btn btn-ghost millieu" %>
 </div>
+<%= image_tag "myywhiskey.jpg" %>

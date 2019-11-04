@@ -12,6 +12,12 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <%= link_to "Cocktails", cocktails_path %>
+        <img src="https://www.iconsdb.com/icons/preview/purple/cocktail-2-xxl.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      </a>
+    </nav>
     <%= yield %>
     <%= javascript_include_tag "application" %>
     <%= javascript_pack_tag "application" %>
